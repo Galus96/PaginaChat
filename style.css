@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    
+}
+
+.top-container {
+    background-image: url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    height: 100vh;
+    background-size: cover;
+    display: flex;  /*Bring the text to center*/
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.top-container h1{
+    color: #41494c;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 200px; /* Añadimos un margen superior para centrar un poco más arriba */
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column; /* Los elementos se alinearán en una columna */
+    align-items: center; /* Centrar horizontalmente los elementos en la columna */
+    text-align: center;
+}
+
+.content-column {
+    margin: 10px 0; /* Espacio entre las columnas */
+}
+
+.content-column video {
+    max-width: 30%; /* Ajusta el ancho máximo del video al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción del video */
+}
+
+
+.text {
+    margin: 50px 5%; /*TOP - BOTTOM*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;  /*Brings all next to eachother*/
+    position: fixed; /*Nvbar moves to the top of the img*/
+    background-color: rgba(175, 216, 238, 0.475);
+    width: 100%;
+    justify-content: space-between; /*Separates the logo and unordered list*/
+    align-items: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+    transition: background-color 0.4s;  /*an animation when the color change*/
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none; /*Eliminates dots*/
+}
+
+.navbar ul li a{
+    text-decoration: none; /*Removes underline*/
+    margin: 0 10px;
+    color: rgb(1, 1, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li a:hover{ /*When the hover is on the text it turns red*/
+    color: red;
+}
+
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active ul li a{
+    color: aliceblue;
+}
